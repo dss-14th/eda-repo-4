@@ -11,4 +11,18 @@ GOAL
 
 Preparation
 -------------------------------------
-1.
+1. Kaggle의 League Of Legends Challenger Rank Game-10min,15min(https://www.kaggle.com/gyejr95/league-of-legends-challenger-rank-game10min15min)의 데이터를 참조
+2. Kaggle의 League Of Legends High elo Ranked Games(2020)(https://www.kaggle.com/gyejr95/league-of-legends-challenger-ranked-games2020)의 데이터를 참조
+3. 2개의 데이터를 jupyter notebook으로 불러온 이후, pandas DataFrame으로 데이터 전처리를 시작한다.
+
+Execution
+-------------------------------------
+1. 첫 번째 데이터(Challenger_Ranked_Games_15minute.csv):
+  이상치 제거 -> 컬럼 간 상관계수 -> 필요없는 컬럼 전처리(Diff 컬럼 생성) -> 상관관계 파악 및 시각화 -> Feature_importances
+2. 두 번째 데이터(Challenger_Ranked_Games.csv):
+  이상치 제거 -> 컬럼 간 상관계수 -> 필요없는 컬럼 전처리(Diff 컬럼 생성) -> 상관관계 파악 및 시각화 -> Feature_importances
+
+Detail
+-------------------------------------
+### Programing Language:
+- Python 3.7
