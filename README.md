@@ -22,12 +22,22 @@ Process
 2. 두 번째 데이터(Challenger_Ranked_Games.csv):
   null값 확인 및 이상치 제거 -> 컬럼 간 상관계수 -> 필요없는 컬럼 전처리(Diff 컬럼 생성)
 3. 항목간 상관관계 분석:
+<img width="984" alt="스크린샷 2020-10-25 오후 4 39 50" src="https://user-images.githubusercontent.com/65877745/97101461-f000c600-16e0-11eb-8fd5-cdb23f6953c6.png">
+4. 두 데이터 (15분, 전체 게임 셋)의 컬럼 중요도 비교:
+<div>
+  <img width="219" alt="15분 게임" src="https://user-images.githubusercontent.com/65877745/97101496-4e2da900-16e1-11eb-9b86-e80df07b2621.png">
+  <img width="215" alt="전체 게임" src="https://user-images.githubusercontent.com/65877745/97101499-52f25d00-16e1-11eb-8b33-77550c50faf3.png">
+</div>
 
-Detail
+Conclusion
 -------------------------------------
-### Programing Language:
-- Python 3.7(Anaconda Jupyter Notebook)
-
 ### 결론 & 한계점
 
+1. 높은 티어의 플레이어들은 잘하면 잘 할수록 안정적으로 플레이하는 성향을 가지고 있다. 리스크를 동반한 변수를 만드는 것에 집중하기 보다, 상대방의 실수를 포착하였을 때 그것을 우리 팀으로 유리하게 가져오는 플레이 위주로 하며, 승률을 높인다.
+
+2. 전체 게임 셋에서 게임 시간이 길어질수록 오브젝트도 더 많이 챙길 수 있기 때문에 둘의 결정관계지수가 높을 것이라 예상하였으나, 오브젝트들마다의 결정관계가 달라서 확인할 수가 없었다.
+
+3. AOS 게임의 특성상 승/패에 가장 영향을 미치는 게이머의 실력, 다양한 챔피언 조합으로 생길 수 있는 변수, 아이템에 따른 변수들을 정량적 데이터로 구할 수 없다는 점에서 결론을 내리고, 그 다음 step으로 넘어가기에 부족하다는 결론을 내리게 되었다.
  
+### Programing Language:
+- Python 3.7(Anaconda Jupyter Notebook)
